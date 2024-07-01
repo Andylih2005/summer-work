@@ -132,7 +132,7 @@ int main()
 	height(t.root, ans);
 	if (ans)
 	{
-		outfile << "True";//SB
+		outfile << "True";
 	}
 	else
 	{
