@@ -1,3 +1,6 @@
+![image](https://github.com/Andylih2005/summer-work/blob/main/Logo.png)
+![image](https://github.com/Andylih2005/summer-work/blob/main/%E5%8A%9F%E8%83%BD%E7%AE%80%E5%9B%BE.png)
+![image](https://github.com/Andylih2005/summer-work/blob/main/%E5%9C%96%E7%89%87_20240702171629.png)
 作者：劉卓穎
 
 一、团队说明
