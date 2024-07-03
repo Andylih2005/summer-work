@@ -1,13 +1,18 @@
+团队logo
 ![image](https://github.com/Andylih2005/summer-work/blob/main/Logo.png)
+
+功能简图
 ![image](https://github.com/Andylih2005/summer-work/blob/main/%E5%8A%9F%E8%83%BD%E7%AE%80%E5%9B%BE.png)
+
+软件原型设计
 ![image](https://github.com/Andylih2005/summer-work/blob/main/%E5%9C%96%E7%89%87_20240702171629.png)
-作者：劉卓穎
+
+[Sprint代办列表](https://docs.google.com/spreadsheets/d/1kDnWy84cwoEDzw60bZTUcxz82CcJoFGTPW6D-06OD2M/edit?usp=sharing)
 
 一、团队说明
 团队名称：	我要放假
 中文寓意：	如名称所示，我们都渴望着放假
 团队宣言：拒绝挂科，拥抱假期！
-团队Logo：	
 Logo寓意说明：猫咪、度假、书籍，紧扣我们的团队意愿和我们所选的主题。
 
 二、团队结构：
@@ -30,9 +35,6 @@ Logo寓意说明：猫咪、度假、书籍，紧扣我们的团队意愿和我�
 四、管理制度
 1.每天汇总自己当日的进度，讨论当前问题。积极沟通。
 2.使用GitHub进行代码版本管理，确保代码质量。
-
-
-
 
 
 2024年7月2日 星期二
