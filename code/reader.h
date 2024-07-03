@@ -48,12 +48,12 @@ void loginreader(string idname, string password, savereader &db)
 		if (rear->idname == idname && rear->password == password)
 		{
 			flag = true;
-			cout << "¥Î¤áµn¤J¦¨¥\" << endl;
+			cout << "ç”¨æˆ¶ç™»å…¥æˆåŠŸ" << endl;
 		}
 		rear = rear->next;
 	}
 	if (!flag)
 	{
-		cout << "¥Î¤á½ã¸¹©Î±K½X¦³»~" << endl;
+		cout << "ç”¨æˆ¶è³¬è™Ÿæˆ–å¯†ç¢¼æœ‰èª¤" << endl;
 	}
 }
