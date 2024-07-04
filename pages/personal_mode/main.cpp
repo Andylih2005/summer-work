@@ -1,4 +1,4 @@
-#include "mywindow.h"
+#include "personal_window.h"
 
 #include <QApplication>
 
