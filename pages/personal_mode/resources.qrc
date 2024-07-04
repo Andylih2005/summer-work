@@ -1,0 +1,6 @@
+<RCC>
+    <qresource lang="c++" prefix="/images">
+        <file>E:/document/year_one/3rd/Logo.png</file>
+        <file>E:/document/year_one/3rd/Cat(1).png</file>
+    </qresource>
+</RCC>
