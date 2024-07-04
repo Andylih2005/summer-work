@@ -9,15 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dlg_changepassword.cpp \
+    dlg_signup.cpp \
     dlg_welcome.cpp \
     main.cpp \
     user_center.cpp
 
 HEADERS += \
+    dlg_changepassword.h \
+    dlg_signup.h \
     dlg_welcome.h \
     user_center.h
 
 FORMS += \
+    dlg_changepassword.ui \
+    dlg_signup.ui \
     dlg_welcome.ui \
     user_center.ui
 

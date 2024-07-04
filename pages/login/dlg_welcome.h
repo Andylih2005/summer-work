@@ -15,6 +15,11 @@ public:
     explicit Dlg_Welcome(QWidget *parent = nullptr);
     ~Dlg_Welcome();
 
+private slots:
+    void on_btnSign_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Dlg_Welcome *ui;
 };
