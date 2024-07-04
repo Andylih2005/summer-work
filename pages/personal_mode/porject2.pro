@@ -10,15 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     book_window.cpp \
+    find_window.cpp \
     main.cpp \
     personal_window.cpp
 
 HEADERS += \
     book_window.h \
+    find_window.h \
     personal_window.h
 
 FORMS += \
     book_window.ui \
+    find_window.ui \
     personal_window.ui
 
 # Default rules for deployment.

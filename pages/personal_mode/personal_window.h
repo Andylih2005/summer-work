@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include "book_window.h"
 
+class find_window;  // 前向声明 FindWindow 类
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MyWindow;
@@ -20,12 +22,13 @@ public:
     void ChangeMode_book();
     void ChangeMode_pay();
     void ChangeMode_find();
-    void showMainWindow();  // 添加显示主窗口的函数
+    void showPersonalWindow();  // 添加显示主窗口的函数
 
 
 private:
     Ui::MyWindow *ui;
     BookWindow *book_window;  // 声明 book_window 指针
+    find_window *p_find_window;  // 声明 book_window 指针
 
 };
 #endif // MYWINDOW_H
