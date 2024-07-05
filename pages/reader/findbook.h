@@ -26,6 +26,8 @@ private slots:
 
     void on_PayMode_Button_clicked();
 
+    void on_reduce_button_clicked();
+
 private:
     Ui::findbook *ui;
 };

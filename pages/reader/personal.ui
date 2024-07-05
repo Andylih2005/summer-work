@@ -448,11 +448,20 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QTextBrowser" name="Password_Input"/>
-      </item>
       <item row="0" column="1">
-       <widget class="QTextBrowser" name="Name_input"/>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>aaaa</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QTextEdit" name="password_input"/>
       </item>
      </layout>
     </item>
@@ -547,7 +556,7 @@ background-color: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="resources.qrc">:/images/E:/document/year_one/3rd/Cat(1).png</pixmap>
+    <pixmap resource="resources.qrc">:/images/pic/Cat(1).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -581,7 +590,7 @@ background-color: transparent;
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="resources.qrc">:/images/E:/document/year_one/3rd/Logo.png</pixmap>
+    <pixmap resource="resources.qrc">:/images/pic/Logo.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

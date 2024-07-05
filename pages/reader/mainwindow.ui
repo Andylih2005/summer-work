@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>120</x>
       <y>80</y>
       <width>431</width>
       <height>241</height>
@@ -32,8 +32,8 @@
      <rect>
       <x>20</x>
       <y>200</y>
-      <width>16</width>
-      <height>16</height>
+      <width>88</width>
+      <height>142</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -43,7 +43,7 @@
         <bool>false</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -80,7 +80,7 @@
         <bool>false</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -319,7 +319,7 @@
         <bool>false</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -354,7 +354,7 @@
         <bool>false</bool>
        </property>
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -387,6 +387,32 @@
     <zorder>FindBookMode_Button</zorder>
     <zorder>PayMode_Button</zorder>
     <zorder>PersonalMode_Button</zorder>
+   </widget>
+   <widget class="QRadioButton" name="Reader_button">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>25</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reader</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="Manager_button">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>25</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Manager</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

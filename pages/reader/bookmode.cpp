@@ -33,7 +33,6 @@ void bookmode::on_FindBookMode_Button_clicked()
     this->hide();
 }
 
-
 void bookmode::on_PayMode_Button_clicked()
 {
     paymode *p_pay_window = new paymode;

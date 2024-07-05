@@ -10,25 +10,37 @@ CONFIG += c++17
 
 SOURCES += \
     bookmode.cpp \
+    changebook.cpp \
+    checkbook.cpp \
     findbook.cpp \
+    inputbook.cpp \
     main.cpp \
     mainwindow.cpp \
     paymode.cpp \
-    personal.cpp
+    personal.cpp \
+    usemmanagement.cpp
 
 HEADERS += \
     bookmode.h \
+    changebook.h \
+    checkbook.h \
     findbook.h \
+    inputbook.h \
     mainwindow.h \
     paymode.h \
-    personal.h
+    personal.h \
+    usemmanagement.h
 
 FORMS += \
     bookmode.ui \
+    changebook.ui \
+    checkbook.ui \
     findbook.ui \
+    inputbook.ui \
     mainwindow.ui \
     paymode.ui \
-    personal.ui
+    personal.ui \
+    usemmanagement.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

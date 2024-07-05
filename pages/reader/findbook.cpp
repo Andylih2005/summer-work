@@ -39,3 +39,9 @@ void findbook::on_PayMode_Button_clicked()
     this->hide();
 }
 
+
+void findbook::on_reduce_button_clicked()
+{
+
+}
+
