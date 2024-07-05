@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_btnLog_clicked();
+
 private:
     Ui::Dlg_Welcome *ui;
 };

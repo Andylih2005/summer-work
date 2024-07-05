@@ -13,12 +13,15 @@ SOURCES += \
     dlg_signup.cpp \
     dlg_welcome.cpp \
     main.cpp \
+    sqlite3.c \
     user_center.cpp
 
 HEADERS += \
+    add.h \
     dlg_changepassword.h \
     dlg_signup.h \
     dlg_welcome.h \
+    sqlite3.h \
     user_center.h
 
 FORMS += \
@@ -34,3 +37,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Logo.qrc
+
+SUBDIRS += \
+    ../MainBMS/poject4.pro
+
+DISTFILES +=

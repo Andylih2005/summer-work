@@ -15,6 +15,9 @@ public:
     explicit Dlg_SignUp(QWidget *parent = nullptr);
     ~Dlg_SignUp();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Dlg_SignUp *ui;
 };
