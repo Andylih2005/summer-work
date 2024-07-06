@@ -92,6 +92,8 @@ void checkbook::on_pages_textChanged()
 
 void checkbook::on_pushButton_4_clicked()
 {
-
+    UseMmanagement *p_m_userM_window=new UseMmanagement;
+    p_m_userM_window->show();  // 显示新窗口
+    this->hide();  // 关闭当前窗口
 }
 

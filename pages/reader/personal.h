@@ -26,8 +26,14 @@ private slots:
 
     void on_PayMode_Button_clicked();
 
+    void on_Update_Button_clicked();
+
+    void on_password_input_textChanged();
+
 private:
     Ui::personal *ui;
+    QString enterpassword; // 用于存储实际密码
+
 
 };
 

@@ -30,6 +30,8 @@ private slots:
 
     void on_pages_textChanged();
 
+    void on_pushButton_4_clicked();
+
 private:
     Ui::checkbook *ui;
 };
