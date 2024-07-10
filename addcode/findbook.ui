@@ -67,7 +67,7 @@
     background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为透明}</string>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -147,7 +147,7 @@
     background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为透明}</string>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -227,7 +227,7 @@
     background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为透明}</string>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -307,7 +307,7 @@
     background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为透明}</string>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -387,7 +387,7 @@
     background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为透明}</string>
         </property>
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -904,7 +904,7 @@
      <x>330</x>
      <y>40</y>
      <width>511</width>
-     <height>75</height>
+     <height>84</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -921,7 +921,7 @@
        </widget>
       </item>
       <item row="1" column="1">
-       <widget class="QComboBox" name="Type_Name_chose">
+       <widget class="QComboBox" name="Type_Name_chose_2">
         <property name="font">
          <font>
           <pointsize>18</pointsize>
@@ -1074,6 +1074,9 @@ border: none;\n    background-color: rgba(0, 0, 0, 0); /* 设置背景颜色为�
        <font>
         <pointsize>16</pointsize>
        </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
       </property>
       <property name="text">
        <string>1</string>

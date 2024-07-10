@@ -385,7 +385,7 @@
 </string>
           </property>
           <property name="text">
-           <string>查找图书</string>
+           <string>用户管理</string>
           </property>
          </widget>
         </item>

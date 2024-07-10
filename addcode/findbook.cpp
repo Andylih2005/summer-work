@@ -11,7 +11,6 @@
 using namespace std;
 extern char* nowaccount;
 extern sqlite3 *db;
-int p_book=0;
 int n=0;
 struct showbook
 {
@@ -140,7 +139,7 @@ void findbook::on_raise_button_clicked()//向后翻页
     QString pages_number=ui->pages->text();
     bool ok;
     int intValue = pages_number.toInt(&ok);
-    intValue=(intValue-1)*5;
+    n=(intValue-1)*5;
     int length=savedata.size();
     int max_pages;
     if (length%5==0){
@@ -234,7 +233,10 @@ void findbook::showpages(){
 void findbook::on_find_button_clicked()
 {
     QString BookName=ui->label_input->text();
-    QString TypeName=ui->Type_Name_chose->currentText();
+    qDebug()<<BookName;
+    QString TypeName=ui->Type_Name_chose_2->currentText();
+    qDebug()<<TypeName;
+    n=0;
     std::string temp1=BookName.toStdString();
     std::string temp2=TypeName.toStdString();
     char * bookname=(char*)temp1.c_str();
@@ -244,12 +246,35 @@ void findbook::on_find_button_clicked()
     int rc;
     if (BookName=="" && TypeName=="")
     {
+        qDebug()<<"both empty";
         //全空警告
+        qDebug()<<nowaccount;
+        const char * sql="SELECT name,author,IBSN FROM book";
+        sqlite3_stmt *stmt;
+        int rc;
+        rc=sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+        while (sqlite3_step(stmt) == SQLITE_ROW)
+        {
+            showbook temp;
+            temp.name=QString((char*)sqlite3_column_text(stmt, 0));
+            temp.author=QString((char*)sqlite3_column_text(stmt, 1));
+            temp.IBSN=QString((char*)sqlite3_column_text(stmt, 2));
+            savedata.push_back(temp);
+        }
+        int length=savedata.size();
+        qDebug()<<length;
+        int intValue=1;
+        ui->pages->setText(QString::number(intValue));
+        showpages(length,intValue);
+        //ui->pages->setAlignment(Qt::AlignCenter);
+
+        //showpages(length,1);
     }
     else
     {
-        if (BookName=="")
+        if (TypeName=="")
         {
+            qDebug()<<"typename empty";
             rc = sqlite3_prepare_v2(db, onlyname(bookname), -1, &stmt, NULL);
             while ((rc = sqlite3_step(stmt)) == SQLITE_ROW)
             {
@@ -262,8 +287,10 @@ void findbook::on_find_button_clicked()
         }
         else
         {
-            if (TypeName=="")
+            if (BookName=="")
             {
+                qDebug()<<"bookname empty";
+
                 rc = sqlite3_prepare_v2(db, onlytype(type), -1, &stmt, NULL);
                 while ((rc = sqlite3_step(stmt)) == SQLITE_ROW)
                 {
@@ -276,6 +303,7 @@ void findbook::on_find_button_clicked()
             }
             else
             {
+                qDebug()<<"no empty";
                 rc = sqlite3_prepare_v2(db, both(bookname,type), -1, &stmt, NULL);
                 while ((rc = sqlite3_step(stmt)) == SQLITE_ROW)
                 {
@@ -287,13 +315,16 @@ void findbook::on_find_button_clicked()
                 }
             }
         }
+        int length=savedata.size();
+        if (length>0){
+            //ui->pages->setAlignment(Qt::AlignCenter);
+            showpages(length,1);
+        }
+        else{
+            QMessageBox::warning(nullptr,nullptr,"没有这本书");
+        }
     }
-    if (true){      //能找到这本书11111
-        //显示逻辑11111
-    }
-    else{
-        QMessageBox::warning(nullptr,nullptr,"没有这本书");
-    }
+
 }
 
 

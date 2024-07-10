@@ -10,7 +10,13 @@ class paymode;
 namespace Ui {
 class bookmode;
 }
-
+struct UserRecord {
+    QString username;
+    QString bookname;
+    QString isbn;
+    int intime;
+    int outtime;
+};
 class bookmode : public QWidget
 {
     Q_OBJECT
@@ -25,6 +31,8 @@ private slots:
     void on_FindBookMode_Button_clicked();
 
     void on_PayMode_Button_clicked();
+//void b_timeint (intime,int outtime){
+
 
 private:
     Ui::bookmode *ui;

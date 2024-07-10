@@ -156,7 +156,9 @@ void personal::on_Update_Button_clicked()
                 if (rc != SQLITE_OK) {
                     qDebug() << "SQL error (password update):" << sqlite3_errmsg(db);  // 新增部分：调试信息
                     QMessageBox::warning(this, "Error", "Failed to update password.");
-                } else {
+                } else
+                {
+                    Old_Password=newPassword;
                     QMessageBox::information(this, "Success", "Password updated successfully.");
                 }
 

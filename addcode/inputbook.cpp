@@ -66,6 +66,8 @@ void inputbook::on_pushButton_clicked()
     QString ISBNName=ui->isbnnn->text();
     QString PressName=ui->PRESS_INPUT->text();
     QString TypeName=ui->Type_Name_chose->currentText();
+    qDebug()<<TypeName;
+
     std::string str1=AutorName.toStdString();
     std::string str2=BookName.toStdString();
     std::string str3=ISBNName.toStdString();
