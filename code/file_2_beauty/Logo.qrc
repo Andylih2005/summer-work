@@ -1,0 +1,63 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Logo.png</file>
+        <file>Cat(1).png</file>
+        <file>bg1.png</file>
+        <file>bg2.png</file>
+        <file>45.png</file>
+        <file>60.png</file>
+        <file>allsongs_button.png</file>
+        <file>allsongs_button_glow.png</file>
+        <file>allsongs_button_pressed.png</file>
+        <file>base_light.png</file>
+        <file>bg_light.png</file>
+        <file>bg_shadow.png</file>
+        <file>bg-shapes_light.png</file>
+        <file>button.png</file>
+        <file>button_pressed.png</file>
+        <file>delet_button.png</file>
+        <file>delet_button_pressed.png</file>
+        <file>delete.png</file>
+        <file>delete_friend.png</file>
+        <file>delete-pressed.png</file>
+        <file>download.png</file>
+        <file>download_pressed.png</file>
+        <file>etherstrike.png</file>
+        <file>folder-jump-down.png</file>
+        <file>folder-jump-down-pressed.png</file>
+        <file>home.png</file>
+        <file>home_pressed.png</file>
+        <file>irruption_banner.png</file>
+        <file>irruption_shadow_only.png</file>
+        <file>login.png</file>
+        <file>login-pressed.png</file>
+        <file>LoginTop.png</file>
+        <file>main_course.png</file>
+        <file>main_course_pressed.png</file>
+        <file>main_more.png</file>
+        <file>main_more_pressed.png</file>
+        <file>main_musicplay.png</file>
+        <file>main_musicplay_pressed.png</file>
+        <file>main_story.png</file>
+        <file>main_story_pressed.png</file>
+        <file>map_button_right.png</file>
+        <file>map_button_right_pressed.png</file>
+        <file>resume_button.png</file>
+        <file>resume_button_pressed.png</file>
+        <file>timer_normal.png</file>
+        <file>timer_red.png</file>
+        <file>world_beyond_integrated_back.png</file>
+        <file>Arrow L_X10.png</file>
+        <file>Arrow L_X10-pressed.png</file>
+        <file>Arrow R_X10.png</file>
+        <file>Arrow R_X10-pressed.png</file>
+        <file>Shadow.png</file>
+        <file>view_button.png</file>
+        <file>Pagination_off.png</file>
+        <file>Pagination_on.png</file>
+        <file>songfilter-search-bar.png</file>
+        <file>songfilter-search-bar-pressed.png</file>
+        <file>pause_background_shadow_multiplayer.png</file>
+        <file>bookcat2.png</file>
+    </qresource>
+</RCC>
